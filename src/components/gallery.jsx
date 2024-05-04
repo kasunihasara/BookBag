@@ -1,5 +1,5 @@
-import { Image } from "./image";
 import React from "react";
+import { Image } from "./image";
 
 export const Gallery = (props) => {
   return (
@@ -8,8 +8,7 @@ export const Gallery = (props) => {
         <div className="section-title">
           <h2>Gallery</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
+            This comprises the curated selection of books available within our establishment.
           </p>
         </div>
         <div className="row">
@@ -22,8 +21,9 @@ export const Gallery = (props) => {
                   >
                     <Image
                       title={d.title}
-                      largeImage={d.largeImage}
                       smallImage={d.smallImage}
+                      // filePath={i % 2 === 0 ? '/book' : '/book1'} 
+                      filePath={`/book${i}`}
                     />
                   </div>
                 ))

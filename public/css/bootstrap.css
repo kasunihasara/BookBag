@@ -1121,11 +1121,16 @@ img {
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   display: block;
-  max-width: 100%;
-  height: auto;
+  width: 80%;
+  height: 410px;
 }
 .img-rounded {
   border-radius: 6px;
+}
+.img-bag{
+  float: left;
+  height: 40px;
+  padding-right: 15px;
 }
 .img-thumbnail {
   display: inline-block;

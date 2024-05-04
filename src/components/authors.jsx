@@ -1,8 +1,8 @@
 import React from "react";
 
-export const Testimonials = (props) => {
+export const Authors = (props) => {
   return (
-    <div id="testimonials">
+    <div id="authors">
       <div className="container">
         <div className="section-title text-center">
           <h2>What our clients say</h2>
@@ -11,14 +11,14 @@ export const Testimonials = (props) => {
           {props.data
             ? props.data.map((d, i) => (
                 <div key={`${d.name}-${i}`} className="col-md-4">
-                  <div className="testimonial">
-                    <div className="testimonial-image">
+                  <div className="author">
+                    <div className="author-image">
                       {" "}
                       <img src={d.img} alt="" />{" "}
                     </div>
-                    <div className="testimonial-content">
+                    <div className="author-content">
                       <p>"{d.text}"</p>
-                      <div className="testimonial-meta"> - {d.name} </div>
+                      <div className="author-meta"> - {d.name} </div>
                     </div>
                   </div>
                 </div>
